@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topologías de Red</title>
+    <link rel="stylesheet" href="styles.css"><title>Tipos</title>
+<link rel="stylesheet"href="./css/normalize.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="icon" href="./Images/favicon.png" type="image/png">
+</head>
+</header>
+<body>
+    <header>
+        <h1>Topologías de Red</h1>
+        <!-- Agrega onclick al botón de inicio -->
+        <button id="inicio" onclick="mostrarInicio()">Inicio</button>
+    </header>
+    <section id="content" class="inicio">
+        <p  class="espaciado"></p>
+        <center><h2>Bienvenido a la página de topologías de red</h2></center>
+        <p  class="espaciado"></p>
+        <center><p  class="espaciado">Esta página te ayudará a conocer los diferentes tipos de topologías de red.</p></center>
+        <center><p class="espaciado">Da clic en el boton de inicio para conocer que son las topologías de red</p></center>
+        <center><p>y en el menú  de tipos de Topología para ver más información.</p></center> 
+    </section>
+    </section>
+
+    <!-- Menú flotante en la parte superior izquierda con ícono -->
+    <div id="menu-flotante">
+        <button id="menu-icon" onclick="toggleMenu()">
+            <!-- Agregamos el ícono usando HTML (puedes cambiarlo por una imagen si prefieres) -->
+            Tipos de topologias ☰ 
+        </button>
+        <div id="menu-opciones">
+            <button onclick="mostrarTopologia('bus')">Topología de Bus</button>
+            <button onclick="mostrarTopologia('estrella')">Topología de Estrella</button>
+            <button onclick="mostrarTopologia('anillo')">Topología de Anillo</button>
+            <button onclick="mostrarTopologia('doble anillo')">Topología doble Anillo</button>
+            <button onclick="mostrarTopologia('malla')">Topología de Malla</button>
+            <button onclick="mostrarTopologia('arbol')">Topología Árbol</button>
+            <button onclick="mostrarTopologia('mixta')">Topología Mixta</button>
+
+        </div>
+    </div>
+ <!-- Segundo menú flotante para información de ponchado de cable -->
+<div id="menu-cable">
+    <button id="cable-icon" onclick="mostrarPonchado()">
+        <i class="fas fa-plug"></i> Ponchado de Cable
+    </button>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
