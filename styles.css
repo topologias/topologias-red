@@ -164,7 +164,7 @@ header{
     /* Configura el iframe para que ocupe todo el espacio */
     .pdf-fullscreen {
         width: auto;
-        height: auto; /* 100% de la altura de la ventana */
+        height: 100vh; /* 100% de la altura de la ventana */
         border: none;  /* Elimina el borde del iframe */
     }
    
